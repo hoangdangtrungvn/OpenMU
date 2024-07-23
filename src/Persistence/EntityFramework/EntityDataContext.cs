@@ -84,5 +84,6 @@ public class EntityDataContext : ExtendedTypeContext
 
         GuildContext.ConfigureModel(modelBuilder);
         FriendContext.ConfigureModel(modelBuilder);
+        MarriageContext.ConfigureModel(modelBuilder);
     }
 }

@@ -55,4 +55,11 @@ public interface IPlayerContext : IContext
     /// <param name="characterName">The character name.</param>
     /// <returns>The account Otherwise, null.</returns>
     ValueTask<Account?> GetAccountByCharacterNameAsync(string characterName);
+
+    /// <summary>
+    /// Gets the marriage by character id.
+    /// </summary>
+    /// <param name="characterId">The character id.</param>
+    /// <returns>The marriage Otherwise, null.</returns>
+    ValueTask<Marriage?> GetMarriageByCharacterIdAsync(Guid characterId);
 }
